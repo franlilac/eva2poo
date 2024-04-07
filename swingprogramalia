@@ -1,0 +1,350 @@
+import swing.Frame;
+import javax.swing.*;
+
+public class Main {
+    public static void main (String[] args){
+        Frame ventana = new Frame();
+        ventana.setVisible(true);
+    }
+}
+
+
+
+
+package swing;
+
+/**
+ *
+ * @author franb
+ */
+public class Frame extends javax.swing.JFrame {
+
+
+    public Frame() {
+        initComponents();
+    }
+
+
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jPanel1 = new javax.swing.JPanel();
+        lblLiquidacion = new javax.swing.JLabel();
+        lblNombre = new javax.swing.JLabel();
+        txtNombre = new javax.swing.JTextField();
+        lblSueldo = new javax.swing.JLabel();
+        btnCalcular = new javax.swing.JButton();
+        txtImpuesto = new javax.swing.JTextField();
+        txtAFP = new javax.swing.JTextField();
+        txtSalud = new javax.swing.JTextField();
+        txtSueldoLiquido = new javax.swing.JTextField();
+        lblSueldoLiquido = new javax.swing.JLabel();
+        lblSalud = new javax.swing.JLabel();
+        lblAFP = new javax.swing.JLabel();
+        lblImpuesto = new javax.swing.JLabel();
+        lblResumen = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtResumen = new javax.swing.JTextArea();
+        txtSueldo = new javax.swing.JTextField();
+        cboxEmpleado = new javax.swing.JComboBox<>();
+        jLabel1 = new javax.swing.JLabel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(97, 185, 214));
+        jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        lblLiquidacion.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblLiquidacion.setForeground(new java.awt.Color(255, 255, 255));
+        lblLiquidacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblLiquidacion.setText("LIQUIDACIÓN DE SUELDO");
+
+        lblNombre.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblNombre.setForeground(new java.awt.Color(255, 255, 255));
+        lblNombre.setText("NOMBRE");
+        lblNombre.setPreferredSize(new java.awt.Dimension(40, 15));
+
+        txtNombre.setBackground(java.awt.SystemColor.menu);
+        txtNombre.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtNombre.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtNombre.setOpaque(true);
+
+        lblSueldo.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblSueldo.setForeground(new java.awt.Color(255, 255, 255));
+        lblSueldo.setText("SUELDO BRUTO");
+
+        btnCalcular.setBackground(new java.awt.Color(12, 184, 214));
+        btnCalcular.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnCalcular.setForeground(new java.awt.Color(255, 255, 255));
+        btnCalcular.setText("CALCULAR");
+        btnCalcular.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnCalcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcularActionPerformed(evt);
+            }
+        });
+
+        txtImpuesto.setBackground(java.awt.SystemColor.menu);
+        txtImpuesto.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtImpuesto.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        txtAFP.setBackground(java.awt.SystemColor.menu);
+        txtAFP.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtAFP.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        txtSalud.setBackground(java.awt.SystemColor.menu);
+        txtSalud.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtSalud.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        txtSueldoLiquido.setBackground(java.awt.SystemColor.menu);
+        txtSueldoLiquido.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtSueldoLiquido.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        lblSueldoLiquido.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblSueldoLiquido.setForeground(new java.awt.Color(255, 255, 255));
+        lblSueldoLiquido.setText("SUELDO LÍQUIDO");
+
+        lblSalud.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblSalud.setForeground(new java.awt.Color(255, 255, 255));
+        lblSalud.setText("SALUD");
+
+        lblAFP.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblAFP.setForeground(new java.awt.Color(255, 255, 255));
+        lblAFP.setText("AFP");
+
+        lblImpuesto.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblImpuesto.setForeground(new java.awt.Color(255, 255, 255));
+        lblImpuesto.setText("IMPUESTO");
+
+        lblResumen.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblResumen.setForeground(new java.awt.Color(255, 255, 255));
+        lblResumen.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblResumen.setText("RESUMEN");
+
+        txtResumen.setBackground(java.awt.SystemColor.menu);
+        txtResumen.setColumns(20);
+        txtResumen.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtResumen.setLineWrap(true);
+        txtResumen.setRows(8);
+        txtResumen.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jScrollPane1.setViewportView(txtResumen);
+
+        txtSueldo.setBackground(java.awt.SystemColor.menu);
+        txtSueldo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtSueldo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        cboxEmpleado.setBackground(new java.awt.Color(97, 185, 214));
+        cboxEmpleado.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        cboxEmpleado.setForeground(new java.awt.Color(255, 255, 255));
+        cboxEmpleado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "---", "JUNIOR", "MASTER", "SENIOR" }));
+        cboxEmpleado.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        cboxEmpleado.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("EMPLEADO");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblSueldoLiquido)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(44, 44, 44)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                .addComponent(jLabel1)
+                                                .addGap(12, 12, 12))
+                                            .addComponent(lblNombre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(lblAFP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(lblSalud, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(lblImpuesto, javax.swing.GroupLayout.Alignment.TRAILING)))
+                                    .addComponent(lblSueldo, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(11, 11, 11)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(txtImpuesto, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtSalud, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtAFP, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtSueldoLiquido, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(cboxEmpleado, javax.swing.GroupLayout.Alignment.LEADING, 0, 200, Short.MAX_VALUE)
+                                        .addComponent(txtSueldo, javax.swing.GroupLayout.Alignment.LEADING)))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnCalcular, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(27, 27, 27))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(lblLiquidacion, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(191, 191, 191))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblResumen, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(53, 53, 53))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(lblLiquidacion)
+                .addGap(34, 34, 34)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtSueldo, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblSueldo))
+                .addGap(16, 16, 16)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(cboxEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addComponent(lblResumen)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtImpuesto, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblImpuesto))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtAFP, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblAFP))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtSalud, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblSalud))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblSueldoLiquido)
+                            .addComponent(txtSueldoLiquido, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
+        String nombre = txtNombre.getText();
+        double sueldo = Double.parseDouble(txtSueldo.getText());
+        double impuesto;
+        double afp = 0.11;
+        double salud = 0.07;
+
+        if (sueldo >= 10000 && sueldo <= 30000) {
+            impuesto = 0.10;
+        } else if (sueldo > 30000 && sueldo <= 50000) {
+            impuesto = 0.2;
+        } else if (sueldo > 50000) {
+            impuesto = 0.35;
+        } else {
+            impuesto = 0;
+        }
+
+
+        double resultadoImpuesto = sueldo * impuesto;
+        double resultadoAFP = sueldo * afp;
+        double resultadoSalud = sueldo * salud;
+        double resultadoSueldoLiquido = sueldo - resultadoImpuesto - resultadoAFP - resultadoSalud;
+
+        txtImpuesto.setText(String.format("%.2f", resultadoImpuesto));
+        txtAFP.setText(String.format("%.2f", resultadoAFP));
+        txtSalud.setText(String.format("%.2f", resultadoSalud));
+        txtSueldoLiquido.setText(String.format("%.2f", resultadoSueldoLiquido));
+        txtResumen.setText("");
+
+        String puestoTrabajo = cboxEmpleado.getSelectedItem().toString();
+        String resumen = String.format("Buen día, %s. Su puesto de trabajo es %s.\n", nombre, puestoTrabajo);
+        resumen += String.format("Debe pagar $%.0f de Impuestos.\n", resultadoImpuesto);
+        resumen += String.format("Debe pagar $%.0f a su AFP.\n", resultadoAFP);
+        resumen += String.format("Debe pagar $%.0f de Salud.\n", resultadoSalud);
+        resumen += String.format("Por lo tanto, su sueldo líquido es $%.0f.", resultadoSueldoLiquido);
+
+        txtResumen.setText(resumen);
+    }//GEN-LAST:event_btnCalcularActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Frame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Frame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Frame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Frame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Frame().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCalcular;
+    private javax.swing.JComboBox<String> cboxEmpleado;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblAFP;
+    private javax.swing.JLabel lblImpuesto;
+    private javax.swing.JLabel lblLiquidacion;
+    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblResumen;
+    private javax.swing.JLabel lblSalud;
+    private javax.swing.JLabel lblSueldo;
+    private javax.swing.JLabel lblSueldoLiquido;
+    private javax.swing.JTextField txtAFP;
+    private javax.swing.JTextField txtImpuesto;
+    private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextArea txtResumen;
+    private javax.swing.JTextField txtSalud;
+    private javax.swing.JTextField txtSueldo;
+    private javax.swing.JTextField txtSueldoLiquido;
+    // End of variables declaration//GEN-END:variables
+}
